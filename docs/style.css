@@ -28,7 +28,9 @@ nav a {
     color: white;
     margin: 0 1em;
 }
-
+nav img {
+    
+}
 section {
     padding: 2em;
     background-color: rgba(255, 255, 255, 0.307);
@@ -59,7 +61,7 @@ section {
 .review {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    padding: 10px;
+    padding:10px;
     margin-bottom: 20px;
 }
 body {
@@ -304,4 +306,49 @@ nav a {
 
 #menu tr:hover {
     background-color: #f5f5f5; /* Zmena farby pozadia riadka pri hoveri */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#gallery-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.gallery-item {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-item:hover .description {
+    opacity: 1;
 }
