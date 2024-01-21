@@ -13,22 +13,6 @@ header {
     padding: 1em;
     text-align: center;
 }
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    
-    
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    margin: 0 1em;
-}
-
     
 
 section {
@@ -119,26 +103,6 @@ h1 {
     margin: 0;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-
-
-
 #restaurant-logo {
     position: left; 
     bottom: 0px; 
@@ -159,17 +123,6 @@ header {
     text-align: center;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #444;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
 
 section {
     padding: 20px;
@@ -192,23 +145,6 @@ header {
 
 h1 {
     margin: 2px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 10px;
-    display: flex;
-}
-
-nav li {
-    margin-right: 0px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
 }
 
 #social-icons {
@@ -237,23 +173,6 @@ header {
 
 h1 {
     margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
 }
 
 #social-icons {
@@ -424,24 +343,6 @@ header {
     padding: 1em;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #555;
-    padding: 0.5em;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 1em;
-}
-
 section {
     text-align: center;
     padding: 2em;
@@ -491,24 +392,6 @@ header {
     padding: 10px;
 }
 
-nav {
-    background-color: #444;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
 section {
     margin: 20px;
 }
@@ -526,4 +409,80 @@ section {
     width: 30px;
     height: 30px;
 }
-    
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav li {
+    margin: 0;
+    padding: 10px 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+body { /* logo */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+#small-logo {
+    width: 140px; /* prispôsobte veľkosť podľa potreby */
+    height: 95px; /* prispôsobte veľkosť podľa potreby */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav li {
+    margin: 0;
+    padding: 10px 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
