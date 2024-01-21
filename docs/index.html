@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,42 +12,55 @@
 
     <header>
         <h1>Reštaurácia u Toma</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Domov</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="onas.html">O nás</a></li>
-                <li><a href="rezervacia.html">Rezervácie</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li> 
-                <li><a href="praca.html">Žiadosť o prácu</a></li>          
-            </ul>
-        </nav>
-        
     </header>
-    <section id="home">
-           
 
-        <h2>Vitajte v reštaurácii "U Toma"</h2>
-        
-        <p>Objavte jedinečný zážitok z vynikajúcich jedál a príjemného prostredia. Naša reštaurácia ponúka autentické chute spojené s rodinnou atmosférou.</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="onas.html">O nás</a></li>
+            <li><a href="rezervacia.html">Rezervácie</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="praca.html">Žiadosť o prácu</a></li>
+        </ul>
+    </nav>
 
-        <p>Sme hrdí na to, že pripravujeme každé jedlo so starostlivosťou a vášňou. Nechajte sa očariť našou kuchyňou a nezabudnuteľným pohostinným zážitkom.</p>
-
-        <h3>Naša ponuka zahŕňa:</h3>
-        <p>
-            <br>Široký výber jedál</br>
-            <br>Kvalitné suroviny</br>
-            <br>Príjemné prostredie pre rodiny a priateľov</br>
-            <br>Osobitný prístup k našim hosťom</br>
-        </p>    
-
-           
-
+    <section id="home-container" class="content" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <div class="container">
+            <h2 style="color: #108dac;">Vitajte v reštaurácii "U Toma"</h2>
+            <p>Objavte jedinečný zážitok z vynikajúcich jedál a príjemného prostredia. Naša reštaurácia ponúka autentické chute spojené s rodinnou atmosférou.</p>
+        </div>
     </section>
+
+    <section class="content" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <div class="container">
+            <h2 style="color: #086480;">Naša ponuka zahŕňa</h2>
+            <p>
+                <br>Široký výber jedál</br>
+                <br>Kvalitné suroviny</br>
+                <br>Príjemné prostredie pre rodiny a priateľov</br>
+                <br>Osobitný prístup k našim hosťom</br>
+            </p>
+        </div>
+    </section>
+
+
     <div id="social-icons">
         <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
         <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="Twitter"></a>
         <a href="https://www.instagram.com/" target="_blank"><img src="insta.jpg" alt="Instagram"></a>
     </div>
+
+    <script>
+        function zoomIn(element) {
+            element.style.transform = "scale(1.1)";
+            element.style.transition = "transform 0.5s";
+        }
+
+        function zoomOut(element) {
+            element.style.transform = "scale(1)";
+        }
+    </script>
+        
 </body>
 </html>

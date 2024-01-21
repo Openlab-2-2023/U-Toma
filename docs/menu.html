@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Menu - Reštaurácia u Toma</title>
+    <style>
+        .menu-item img {
+            width: 250px; 
+            height: 200px; 
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
 
@@ -25,7 +32,7 @@
     <section id="menu-container">
         <h2><center>Menu</center></h2>
 
-        <div class="menu-item" onmouseover="showDescription('Tatarák', 'Tatarák, podávaný s restovanými zemiakmi a čerstvou zeleninou.', '10.99 €')" onmouseout="hideDescription()">
+        <div class="menu-item">
             <img src="Tatarák.jpg" alt="Tatarák">
             <div class="description">
                 <h3>Tatarák</h3>
@@ -34,7 +41,7 @@
             </div>
         </div>
 
-        <div class="menu-item" onmouseover="showDescription('Lasagne Bolognese', 'Klasické talianske lasagne plnené mletým mäsom, rajčatovým omáčkou a syrovou náplňou.', '12.99 €')" onmouseout="hideDescription()">
+        <div class="menu-item">
             <img src="lazane.jpg" alt="Lasagne Bolognese">
             <div class="description">
                 <h3>Lasagne Bolognese</h3>
@@ -43,7 +50,23 @@
             </div>
         </div>
 
-        
+        <div class="menu-item">
+            <img src="buchty.jpg" alt="Parené buchty">
+            <div class="description">
+                <h3>Parené buchty</h3>
+                <p>Domáce parené buchty s akoukoľvek posýpkou a rozpusteným maslom.</p>
+                <p class="price">Cena: 5.80 €</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="gulas.jpg" alt="Maďarský guláš">
+            <div class="description">
+                <h3>Maďarský guláš</h3>
+                <p>Maďarský Guláš je podávaný s čerstvým krajcom chleba alebo s domácimi knedľami.</p>
+                <p class="price">Cena: 8.50 €</p>
+            </div>
+        </div>
 
     </section>
 
@@ -76,11 +99,11 @@
         }
     </script>
 
-<div id="social-icons">
-    <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
-    <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="Twitter"></a>
-    <a href="https://www.instagram.com/" target="_blank"><img src="insta.jpg" alt="Instagram"></a>
-</div>
+    <div id="social-icons">
+        <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="insta.jpg" alt="Instagram"></a>
+    </div>
 
 </body>
 </html>
