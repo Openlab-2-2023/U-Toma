@@ -7,17 +7,24 @@
     <link rel="stylesheet" href="style.css">
     <title>Menu - Reštaurácia u Toma</title>
     <style>
+        .menu-item {
+            display: inline-block;
+            width: 23%; /* 100% / 4 jedlá = 25%, rezerva 2% pre odsadenie */
+            margin: 1%; /* Odsadenie medzi jedlami */
+        }
+
         .menu-item img {
-            width: 250px; 
-            height: 200px; 
+            width: 100%;
+            height: 200px;
             object-fit: cover;
         }
     </style>
 </head>
+
 <body>
 
     <header>
-        <img src="pozadie.png" alt="Logo" id="small-logo">
+        <img src="logo.png" alt="Logo" id="small-logo">
         <h1>Reštaurácia u Toma</h1>
         <nav>
             <ul>
@@ -32,8 +39,9 @@
     </header>
 
     <section id="menu-container">
-        <h2><center>Menu</center></h2>
+        <h2><center>Aktuálna ponuka naších jedál</center></h2>
 
+        <!-- Prvý riadok -->
         <div class="menu-item">
             <img src="Tatarák.jpg" alt="Tatarák">
             <div class="description">
@@ -70,13 +78,52 @@
             </div>
         </div>
 
+        <!-- Druhý riadok -->
+        
+        <div class="menu-item">
+            <img src="sushi.jpg" alt="Sushi">
+            <div class="description">
+                <h3>Sushi Mix</h3>
+                <p>Rôzne druhy sushi roliek s výberom omáčok.</p>
+                <p class="price">Cena: 15.99 €</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="salat.jpg" alt="Šalát">
+            <div class="description">   
+                <h3>Cézarov Šalát</h3>
+                <p>Klasický šalát Cézar s kurčaťom a cesnakovým dresingom.</p>
+                <p class="price">Cena: 7.50 €</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="spageti.jpg" alt="Špagety">
+            <div class="description">
+                <h3>Špagety Bolognese</h3>
+                <p>Špagety s klasickou Boloňskou omáčkou a parmezánom.</p>
+                <p class="price">Cena: 11.50 €</p>
+            </div>
+        </div>
+
+        <!-- Tretí riadok -->
+        <div class="menu-item">
+            <img src="palacinky.jpg" alt="Palacinky">
+            <div class="description">
+                <h3>Palacinky</h3>
+                <p>Naše lahodné palacinky podávané s javorovým sirupom a čerstvým ovocím.</p>
+                <p class="price">Cena: 6.99 €</p>
+            </div>
+        </div>
+
     </section>
 
     <script>
         function showDescription(name, description, price) {
             var descriptionContainer = document.createElement('div');
             descriptionContainer.id = 'description-container';
-            
+
             var heading = document.createElement('h3');
             heading.textContent = name;
 

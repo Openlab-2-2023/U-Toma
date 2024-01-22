@@ -94,7 +94,7 @@ body::before {
 
 header {
     position: relative; 
-    padding: 50px;
+    padding: lef;
     text-align: center;
     color: white;
 }
@@ -485,4 +485,140 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+.copyright svg {
+    width: 10px;
+    margin-top: 10px;
+}
+
+svg {
+    max-height: 200px;
+}
+
+.cls-1 {
+    fill: #e4e3e5;
+}
+
+.cls-2 {
+    fill: #1e1d1d;
+}
+
+.cls-3 {
+    fill: #d2d0d3;
+}
+
+.cls-4 {
+    fill: #79bf84;
+}
+
+.cls-10,
+.cls-11,
+.cls-13,
+.cls-5,
+.cls-8,
+.cls-9 {
+    fill: none;
+    stroke-miterlimit: 10;
+}
+
+.cls-5 {
+    stroke: #e4e3e5;
+}
+
+.cls-6 {
+    fill: #ff88b3;
+}
+
+.cls-7 {
+    fill: #d86694;
+}
+
+.cls-8 {
+    stroke: #ff88b3;
+    stroke-width: 2px;
+}
+
+.cls-9 {
+    stroke: #d86694;
+}
+
+.cls-10 {
+    stroke: #6c6d6c;
+}
+
+.cls-11 {
+    stroke: #222322;
+}
+
+.cls-12 {
+    fill: #2f302f;
+}
+
+.cls-13 {
+    stroke: #2f302f;
+}
+
+.cls-14 {
+    fill: #fafcfa;
+}
+
+.copyright i {
+    color: red;
+}
+
+svg a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+svg a:hover {
+    color: #8219c3;
+    transform: translateY(-5px);
+}
+
+.zoomable {
+    transition: transform 0.3s ease;
+    
+}
+
+.zoomable:hover {
+    transform: scale(1.2);
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.zoomable:hover #tail {
+    animation: wiggle 1s infinite;
+}
+#opening-hours {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#opening-hours table {
+    width: 100%;
+    max-width: 400px; 
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#opening-hours th, #opening-hours td {
+    padding: 10px;
+    border: 1px solid #ddd;
 }

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Prihláška na Zamestnanie</title>
+    <title>Žiadosť o prácu - Reštaurácia u Toma</title>
 </head>
+
 <body>
 
     <header>
-        <img src="pozadie.png" alt="Logo" id="small-logo">
+        <img src="logo.png" alt="Logo" id="small-logo">
         <h1>Reštaurácia u Toma</h1>
         <nav>
             <ul>
@@ -22,32 +24,37 @@
             </ul>
         </nav>
     </header>
-    </nav>
 
-    <section class="content">
-        <h2>Prihláška o Zamestnanie</h2>
+    <section id="job-application">
 
-        <form action="submit_form.php" method="post">
-            <label for="meno">Meno:</label>
-            <input type="text" id="meno" name="meno" required>
+        <div id="form">
+            <h2>Žiadosť o prácu</h2>
+            <form onsubmit="submitApplication(); return false;">
+                <label for="name">Meno:</label>
+                <input type="text" id="name" required><br>
 
-            <label for="priezvisko">Priezvisko:</label>
-            <input type="text" id="priezvisko" name="priezvisko" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="phone">Telefónne číslo:</label>
+                <input type="tel" id="phone" required><br>
 
-            <label for="telefon">Telefónne číslo:</label>
-            <input type="tel" id="telefon" name="telefon" required>
+                <label for="position">Požadovaná pozícia:</label>
+                <input type="text" id="position" required><br>
 
-            <label for="cv">Životopis (CV):</label>
-            <input type="file" id="cv" name="cv" accept=".pdf, .doc, .docx" required>
+                <label for="experience">Skúsenosti:</label>
+                <textarea id="experience" rows="4" required></textarea><br>
 
-            <label for="motivacnyList">Dodatok:</label>
-            <textarea id="motivacnyList" name="motivacnyList" rows="4" required></textarea>
+                <button type="submit">Odoslať žiadosť</button>
+            </form>
+        </div>
 
-            <button type="submit">Odoslať</button>
-        </form>
+        <div id="thank-you">
+            <p>Ďakujeme za váš záujem o prácu v našej reštaurácii!</p>
+            <p>Naša personálna oddelenie preverí vašu žiadosť a ozve sa vám v najbližšej dobe.</p>
+            <p>Veríme, že sa môžeme tešiť na spoluprácu!</p>
+        </div>
+
     </section>
 
     <div id="social-icons">
@@ -55,6 +62,29 @@
         <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="Twitter"></a>
         <a href="https://www.instagram.com/" target="_blank"><img src="insta.jpg" alt="Instagram"></a>
     </div>
-        
+
+    <script>
+        function submitApplication() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var position = document.getElementById('position').value;
+            var experience = document.getElementById('experience').value;
+
+            alert("Žiadosť o prácu úspešne odoslaná:\nMeno: " + name + "\nEmail: " + email + "\nTelefón: " + phone + "\nPozícia: " + position + "\nSkúsenosti: " + experience);
+
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('phone').value = '';
+            document.getElementById('position').value = '';
+            document.getElementById('experience').value = '';
+
+            // Zobraziť poďakovanie
+            document.getElementById('form').style.display = 'none';
+            document.getElementById('thank-you').style.display = 'block';
+        }
+    </script>
+
 </body>
+
 </html>
