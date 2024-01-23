@@ -177,7 +177,7 @@ h1 {
 
 #social-icons {
     display: flex;
-    justify-content: center; /* Zarovná ikony na strede */
+    justify-content: center; 
     align-items: center;
     margin-top: 20px; /* Prípadný odstup od tabuľky s jedlami */
 }
@@ -457,8 +457,8 @@ header {
 }
 
 #small-logo {
-    width: 140px; /* prispôsobte veľkosť podľa potreby */
-    height: 95px; /* prispôsobte veľkosť podľa potreby */
+    width: 140px; 
+    height: 95px; 
     position: absolute;
     top: 0px;
     left: 0px;
@@ -574,6 +574,7 @@ svg a {
     display: inline-block;
     transition: transform 0.5s;
 }
+
 
 svg a:hover {
     color: #8219c3;
