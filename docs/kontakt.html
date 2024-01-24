@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="sk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Kontakt - Reštaurácia u Toma</title>
 </head>
+
 <body>
 
     <header>
@@ -22,49 +24,13 @@
             </ul>
         </nav>
     </header>
-    
+
     <section id="contact">
         <h2>Kontakt</h2>
         <p>Adresa: Adresa 12/58 Žilina 010 09</p>
         <p>Telefón: +421 911 859 777</p>
-        <p>Email: info@restauraciautomasa.sk</p>
+        <p>Email: <a href="mailto:info@restauraciautoma.sk">info@restauraciautoma.sk</a></p>
     </section>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-
-        #reviews {
-            text-align: center;
-            margin: 0px;
-        }
-
-        #review-form {
-            max-width: 600px;
-            margin: 0px auto;
-            padding: 0px;
-            border: 5px solid #ccc;
-            border-radius: 10px;
-        }
-
-        #reviews-list {
-            list-style: none;
-            padding: 0px;
-            text-align: left;
-        }
-
-        .review {
-            border-bottom: 1px solid #ccc;
-            padding: 10px 0;
-        }
-        
-    </style>
-   
-<body>
 
     <section id="reviews">
         <h2><center>Recenzie</center></h2>
@@ -86,8 +52,13 @@
         <ul id="reviews-list"></ul>
     </section>
 
+    <div id="social-icons">
+        <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="insta.jpg" alt="Instagram"></a>
+    </div>
+
     <script>
-       
         var existingReviews = JSON.parse(localStorage.getItem('reviews')) || [];
         displayReviews(existingReviews);
 
@@ -95,24 +66,20 @@
             var username = document.getElementById('username').value;
             var reviewText = document.getElementById('review').value;
 
-            
             var newReview = { username: username, reviewText: reviewText };
             existingReviews.push(newReview);
 
-            
             localStorage.setItem('reviews', JSON.stringify(existingReviews));
 
-            
             displayReviews(existingReviews);
 
-            
             document.getElementById('username').value = '';
             document.getElementById('review').value = '';
         }
 
         function displayReviews(reviews) {
             var reviewsList = document.getElementById('reviews-list');
-            reviewsList.innerHTML = ''; 
+            reviewsList.innerHTML = '';
 
             reviews.forEach(function(review) {
                 var li = document.createElement('li');
@@ -123,12 +90,6 @@
         }
     </script>
 
-
-<div id="social-icons">
-    <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
-    <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="Twitter"></a>
-    <a href="https://www.instagram.com/" target="_blank"><img src="insta.jpg" alt="Instagram"></a>
-</div>
-
 </body>
+
 </html>

@@ -502,3 +502,44 @@ nav a:hover {
     padding: 10px;
     border: 1px solid #ddd;
 }
+
+/*email*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#reviews {
+    text-align: center;
+    margin: 0px;
+}
+
+#review-form {
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 0px;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+}
+
+#reviews-list {
+    list-style: none;
+    padding: 0px;
+    text-align: left;
+}
+
+.review {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+#social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#social-icons a {
+    margin: 0 10px;
+}
